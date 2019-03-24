@@ -71,7 +71,7 @@ function getMyEstimate(event){
 			highEst = 125;
 		}
 
-		if (lowEst == highEst){
+		if (lowEst == highEst && lowEst < 125){
 			document.getElementById('estimateAmt').innerHTML = "Minimum Charge: $125"
 		} else {
 		document.getElementById('estimateAmt').innerHTML = "$" + lowEst + " - $" + highEst;
