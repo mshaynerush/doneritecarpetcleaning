@@ -168,7 +168,7 @@ body
 
 
 
-@media (max-width: 600px)
+@media (max-width: 500px)
 {
 	.toggle-button
 	{
@@ -214,5 +214,10 @@ body
 		padding: 2px;
 		margin: 0;
 		text-align: center;
+	}
+
+	.brand-title
+	{
+		font-size: .8rem;
 	}
 }
