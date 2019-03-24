@@ -9,10 +9,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/toggle.js" async></script>
+<script src="js/estimator.js"></script>
+<script src="js/script.js" async></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet"> 
@@ -21,7 +23,9 @@
 <link rel="stylesheet" href="style_alt.css">
 </head>
 	
+<script>
 
+</script>
 <body>
 
 	<div class="container">
@@ -110,8 +114,147 @@
 	
 </div>
 
+<!-- begin second portion of website under packages -->
 
-	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 second-section">
+				
+				<div class="col-sm-12 col-lg-5 segment">
+					<div class="offerings">Benefits to Carpet Cleaning</div>
+
+						<p>Extends carpet life</p>
+						<p>Contributes to a healthier home</p>
+						<p>Complete removal of bacteria, allergens, dust mites, and soil</p>
+						<p>Eliminates Stains</p>
+						<p>Enhances overall appearance of the room</p>
+					<p>A good rule to follow for the average household is to have your carpets cleaned and restretched every 12-18 months. Vacuum twice a week to reduce wear on carpete fibers from particulate matter abrasion.</p>
+				</div>
+			
+				<div class="col-sm-12 col-lg-1 segment">&nbsp;</div>
+				
+				<div class="col-sm-12 col-lg-6 segment">
+					<div class="offerings">Carpet Cleaning Cost Estimator</div>
+						<div class="form-group col-sm-12 col-lg-4 est">
+								<label for="area">No. of Rooms</label>
+								<input class="form-control" type="text" id="area" placeholder="Up to 200 sq ft / room">
+								<br />
+								<label for="scotch">Scotch Guard</label>
+								<input class="form-control" type="text" id="scotch" placeholder="How Many Rooms to Scotch Guard">
+								<br />
+								<label for="deodorizer">Deodorizer</label>
+								<input class="form-control" type="text" id="deodorizer" placeholder="Number of rooms">
+								<br />
+								<label for="stairs">Stairs</label>
+								<input class="form-control" type="text" id="stairs" placeholder="How many stairs">
+							</div>
+
+							<div class="form-group col-sm-12 col-lg-4 est">
+								<label for="hallways">Hallways</label>
+								<input class="form-control" type="text" id="hallways" placeholder="How many hallways">
+								<br />
+								<label for="landings">Landings</label>
+								<input class="form-control" type="text" id="landings" placeholder="How many landings">
+								<br />
+								<label for="odor">Urine/Odor</label>
+								<input class="form-control" type="text" id="odor" placeholder="How many rooms">
+								<br />
+								<br />
+								<button class="btn-danger btn-sm btn-est" id="getEstimate" type="button">Estimate</button>
+							</div>
+							<div class="col-sm-12 col-lg-1 est">&nbsp;</div>
+							<div class="est col-sm-12 col-lg-4">
+
+								<p class="estimate-total">Based on your entries, your estimate is:</p>
+									<p id="estimateAmt"></p>
+
+							</div>
+				</div>
+
+			</div>
+
+
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">			
+	<!-- begin image gallery -->
+				<div class="col-sm-12">
+					<div class="offerings">Image Gallery</div>
+					<p>Images are from actual homes by Done Rite - A Premier Seattle Carpet Cleaning company</p>
+					<div class="carousel-slide col-sm-12" id="carouselSlider">
+						
+						<img src="img/living-room-1.jpg" alt="Room with cleaned carpets" class="active"/>
+						<img src="img/living-room-2.jpg" alt="Room with cleaned carpets" class="last"/>
+						<img src="img/living-room-4.jpg" alt="Room with cleaned carpets" class="last" />
+						<img src="img/carpet-clean-1.jpg" alt="Room with cleaned carpets" class="last" />
+						<img src="img/carpet-clean-2.jpg" alt="Room with cleaned carpets" class="last" />
+						<img src="img/carpet-clean-3.jpg" alt="Room with cleaned carpets" class="last" />
+						<img src="img/carpet-clean-4.jpg" alt="Room with cleaned carpets" class="last" />
+						<img src="img/carpet-clean-5.jpg" alt="Room with cleaned carpets" class="last" />
+						<img src="img/carpet-clean-6.jpg" alt="Room with cleaned carpets" class="last" />
+						<img src="img/carpet-clean-7.jpg" alt="Room with cleaned carpets" class="last" />
+						<img src="img/carpet-clean-8.jpg" alt="Room with cleaned carpets" class="last" />
+
+
+					</div>
+					<div class="slider-container col-sm-12">
+						<button id="prevBtn" class="slider-prev">&laquo</button>
+						<button id="nextBtn" class="slider-next">&raquo</button>
+					</div>
+
+				</div>
+
+		</div>
+			
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 second-section">
+				
+				<div class="col-sm-12 col-lg-5 segment">
+					<div class="offerings">About Us</div>
+
+						<p>More than 5 years experience in the industry. I started with a portable unit and worked my way to a truck mount carpet cleaning unit here in the Seattl area. I have earned the trust of my customers because of my love for the process. I am reliable, trustworthy, enthusiastic and respectful. This is what I provide to all my Seattle area customers whether you live in a 1000 square foot home, or 10,000. I appreciate every customer. Let me show you why I should be your first choice for carpet cleaning in Seattle.</p>
+				</div>
+			
+				<div class="col-sm-12 col-lg-1 segment">&nbsp;</div>
+				
+				<div class="col-sm-12 col-lg-6 segment">
+					<div class="offerings" id="contactUs">Contact Us</div>
+						<div class="form-group col-sm-12 col-lg-12 est">
+							<form action="contact.php">
+								<label for="name">Name</label>
+								<input class="form-control" type="text" id="name" placeholder="Name">
+								<br />
+								<label for="email">Email Address</label>
+								<input class="form-control" type="text" id="email" placeholder="Email Address">
+								<br />
+								<label for="phone">Phone Number</label>
+								<input class="form-control" type="text" id="phone" placeholder="Phone Number">
+								<br />
+								<label for="message">Message</label>
+								<textarea class="form-control" type="text" id="message" placeholder="Type Message Here"></textarea>							
+								<button class="btn-danger btn-sm btn-est" id="submitBtn" type="button">Send</button>
+							</form>
+						</div>
+
+				</div>
+
+			</div>
+
+
+		</div>
+	</div>
+
+
+<script>
+
+
+
+
+</script>
 </body>
 
 </html>
