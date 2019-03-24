@@ -111,7 +111,7 @@ body
 .offerings
 {
 
-	padding: 10px 0px 10px 10px;
+	padding: 10px;
 	background-color: #000;
 	color: #FFF;
 	font-family: Abel;
@@ -135,6 +135,37 @@ body
 	flex: 4;
 	flex-basis: 60%;
 }
+
+.est
+{
+	float: left;
+}
+
+.btn-est
+{
+	float: right;
+	width: 100%;
+	position: relative;
+	top: 9px;
+}
+
+.estimate-total
+{
+
+	font-size: 1.1rem;
+	font-weight: bold;	
+
+}
+
+#estimateAmt 
+
+{
+	font-size: 2rem;
+	text-align: center;
+	font-weight: bold;
+	color: #AA0000;
+}
+
 
 
 @media (max-width: 600px)

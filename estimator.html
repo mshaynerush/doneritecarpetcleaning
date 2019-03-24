@@ -13,6 +13,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="js/toggle.js" async></script>
+<script src="js/estimator.js" async></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet"> 
@@ -52,9 +53,9 @@
 			<div class="col-sm-12">
 				<div class="banner">
 					<div class="col-sm-12 col-lg-4 intro">
-						<p>Serving the Seattle area</p>
-						<p>Same Day Service</p>
-						<p>We have a Special for all budgets</p>
+						<p>Dedicated</p>
+						<p>Reliable</p>
+						<p>Trustworthy</p>
 						<a href="contact.html"><button type="button" class="btn-rite">Contact Us Now</button></a>
 					</div>
 				</div>
@@ -62,55 +63,60 @@
 		</div>
 
 		<div class="row">
+				<div class="col-sm-12">
+					<div class="col-sm-12 col-lg-12">
+						<h3 class="offerings">Estimator</h3>
+						<p>Enter the information below for a quick estimate for cleaning carpets in your home</p>
+					</div>
+					<div class="col-sm-12 col-lg-12">
+						
+							<div class="form-group col-sm-12 col-lg-3 est">
+								<label for="area">Number of Rooms</label>
+								<input class="form-control" type="text" id="area" placeholder="Up to 200 sq ft / room">
+								<br />
+								<label for="scotch">Scotch Guard</label>
+								<input class="form-control" type="text" id="scotch" placeholder="How Many Rooms to Scotch Guard">
+								<br />
+								<label for="deodorizer">Deodorizer</label>
+								<input class="form-control" type="text" id="deodorizer" placeholder="Number of rooms">
+								<br />
+								<label for="stairs">Stairs</label>
+								<input class="form-control" type="text" id="stairs" placeholder="How many stairs">
+							</div>
 
+							<div class="form-group col-sm-12 col-lg-3 est">
+								<label for="hallways">Hallways</label>
+								<input class="form-control" type="text" id="hallways" placeholder="How many hallways">
+								<br />
+								<label for="landings">Landings</label>
+								<input class="form-control" type="text" id="landings" placeholder="How many landings">
+								<br />
+								<label for="odor">Urine/Odor</label>
+								<input class="form-control" type="text" id="odor" placeholder="How many rooms">
+								<br />
+								<br />
+								<button class="btn-danger btn-sm btn-est" id="getEstimate" type="button">Estimate</button>
+							</div>
+							<div class="col-sm-12 col-lg-1 est">&nbsp;</div>
+							<div class="est col-sm-12 col-lg-4">
 
-	
-					<div class="col-sm-12 col-lg-4">
-						<h3 class="offerings">Silver Package(Up to 1000 sqft)</h3>
-							<ul class="nostyle">
-								<li>Inspection</li>
-								<li>Pre-Treat / Pre-Spray</li>
-								<li>Agitation</li>
-								<li>Hot Water Extraction</li>
-								(Regular Wand Cleaning)
-								<li>$100-$200</li>
-							</ul>
+								<p class="estimate-total">Based on your entries, your estimate is:</p>
+									<p id="estimateAmt"></p>
+
+							</div>
+					</div>
 					</div>
 
-					<div class="col-sm-12 col-lg-4">
-						<h3 class="offerings">Gold Package</h3>
-							<ul class="nostyle">
-								<li>Inspection</li>
-								<li>Vacuum</li>
-								<li>Move Light Furniture</li>
-								<li>Pre-Treat / Pre-Spray</li>
-								<li>Agitation</li>
-								<li>Hot Water Extraction</li>
-								(Rotovac Wand Cleaning)
-								<li>$200-$300</li>
-							</ul>
-					</div>
-					<div class="col-sm-12 col-lg-4">
-						<h3 class="offerings">Platinum Package</h3>
-							<ul class="nostyle">
-								<li>Inspection</li>
-								<li>Vacuum</li>
-								<li>Move Light Furniture</li>
-								<li>Pre-Treat / Pre-Spray</li>
-								<li>Agitation</li>
-								<li>Remove Pet Urine/Odor</li>
-								<li>Hot Water Extraction</li>
-								(Rotovac Wand Cleaning)
-								<li>Scotch Guard Application</li>
-								<li>$300-$400</li>
-							</ul>
-					</div>
+				</div>
+
 			</div>
+
+
+
 
 	
 </div>
-
-
+						
 	
 </body>
 
