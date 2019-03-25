@@ -60,7 +60,7 @@ function changeImg(event){
                 p = i + 1;
             }
 
-            currImg[i].classList.add('active');
+            currImg[i].classList.add('active-img');
             currImg[i].classList.remove('last');
             currImg[p].classList.add('last');
         }

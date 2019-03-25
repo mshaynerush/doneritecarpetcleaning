@@ -76,7 +76,11 @@ function getMyEstimate(event){
 		} else if ( lowEst == highEst && lowEst > 125) {
 			document.getElementById('estimateAmt').innerHTML = "$" + lowEst;
 		} else {
-		document.getElementById('estimateAmt').innerHTML = "$" + lowEst + " - $" + highEst;
+
+		var discl = "Estimate is for usual circumstances and does not include biohazards, extreme damage and wear, and other unforseen difficulties."
+		document.getElementById('estimateAmt').innerHTML = "$" + lowEst + " - $" + highEst; + "<br /><br />";
+		document.getElementsByClassName('disclaimer')[0].innerHTML = discl;
+
 	}
 		
 }

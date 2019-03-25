@@ -13,4 +13,6 @@ const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 		navbarLinks.classList.toggle('active');
 	});
 
+
+
 }
