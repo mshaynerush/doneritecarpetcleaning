@@ -144,8 +144,9 @@ body
 	font-family: Abel;
 	flex: 1;
 	font-weight: bold;
-	flex-basis: 90%;
+	flex-basis: 95%;
 	justify-content: space-around;
+	align-items: center;
 }
 
 .details
