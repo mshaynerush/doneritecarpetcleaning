@@ -145,7 +145,7 @@ body
 	flex: 1;
 	font-weight: bold;
 	flex-basis: 98%;
-	justify-content: space-around;
+
 	align-items: center;
 }
 
