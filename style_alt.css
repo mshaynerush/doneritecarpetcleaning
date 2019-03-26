@@ -135,7 +135,7 @@ body
 .package-block
 {
 	display: flex;
-	
+	align-items: center;
 }
 .package
 {
@@ -144,7 +144,8 @@ body
 	font-family: Abel;
 	flex: 1;
 	font-weight: bold;
-	flex-basis: 80%;
+	flex-basis: 90%;
+	justify-content: space-around;
 }
 
 .details
