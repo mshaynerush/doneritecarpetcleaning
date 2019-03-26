@@ -135,8 +135,9 @@ body
 .package
 {
 	float: left;
-	font-size: 9pt;
-	font-family: Abel;	
+	font-size: 10pt;
+	font-family: Abel;
+	padding: 5px;
 }
 
 .details
