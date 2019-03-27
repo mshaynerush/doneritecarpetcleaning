@@ -149,6 +149,15 @@ body
 
 }
 
+.package p
+{
+	
+	line-height: 20pt;
+	padding: 2px;
+	margin: 0;
+	
+}
+
 .details
 {
 	flex: 4;
