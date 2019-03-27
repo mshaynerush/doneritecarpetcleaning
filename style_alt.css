@@ -140,11 +140,11 @@ body
 .package
 {
 
+	float: left;
 	font-size: 10pt;
 	font-family: Abel;
-	flex: 2;
 	font-weight: bold;
-	flex-basis: 99%;
+
 }
 
 .details
