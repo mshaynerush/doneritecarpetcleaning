@@ -62,10 +62,13 @@ $_POST['service'];
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">
 <link rel="stylesheet" href="style_alt.css">
+	
+<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 	
-<script>
-</script>
+
+
+
 <body>
 
 <div class="container">
@@ -348,17 +351,14 @@ $_POST['service'];
 							<input class="form-control" type="text" id="phone" placeholder="Phone Number">
 							<br />
 							<label for="message">Message</label>
-							<textarea class="form-control" type="text" id="message" placeholder="Type Message Here"></textarea>							
-							<button class="btn-danger btn-sm btn-est" id="submitBtn" type="button" name="submit" onclick="grecaptcha.ready()">Send</button>
+							<textarea class="form-control" type="text" id="message" placeholder="Type Message Here"></textarea>
+							    <div>
+							    <div class="g-recaptcha" data-sitekey="6Lfts5oUAAAAAL8-tklJOH8xK4jC-k--y4asmDq7"></div>
+							</div>
+							<button class="btn-danger btn-sm btn-est" id="submitBtn" type="button" name="submit">Send</button>
 						</form>
-						  <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
-  						<script>
- 					 		grecaptcha.ready(function() {
-      							grecaptcha.execute('6Lfts5oUAAAAAL8-tklJOH8xK4jC-k--y4asmDq7', {action: 'homepage'}).then(function(token) {
-       							 
-   				   });
-  			});
-  </script>
+						 
+  				
 					</div>
 			
 				</div>
