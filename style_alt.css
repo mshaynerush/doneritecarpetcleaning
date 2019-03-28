@@ -125,6 +125,13 @@ body
 
 }
 
+.about, .contact
+{
+	float: left;
+}
+
+
+
 .nostyle
 { 
 
