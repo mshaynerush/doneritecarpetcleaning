@@ -337,7 +337,7 @@ $_POST['service'];
 		<div class="col-sm-12 col-lg-6 contact">
 				<div class="offerings" id="contact">Contact Us</div>
 					<div class="form-group col-sm-12 col-lg-12">
-						<form action="contact.php">
+						<form action="contact.php" method="POST">
 							<label for="name">Name</label>
 							<input class="form-control" type="text" id="name" placeholder="Name">
 							<br />
@@ -349,7 +349,7 @@ $_POST['service'];
 							<br />
 							<label for="message">Message</label>
 							<textarea class="form-control" type="text" id="message" placeholder="Type Message Here"></textarea>							
-							<button class="btn-danger btn-sm btn-est" id="submitBtn" type="button" id="submit">Send</button>
+							<button class="btn-danger btn-sm btn-est" id="submitBtn" type="button" name="submit" onclick="grecaptcha.ready()">Send</button>
 						</form>
 						  <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
   						<script>
