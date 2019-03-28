@@ -1,3 +1,42 @@
+<?php
+
+session_start();
+
+$_POST['fname'];
+$_POST['lname'];
+$_POST['email'];
+$_POST['phone'];
+$_POST['desc'];
+$_POST['service'];
+
+    if(isset($_POST['submit'])) {
+
+
+
+            $url = "https://www.google.com/recaptcha/api/siteverify";
+            $privatekey = "6Lfts5oUAAAAAMPEwTRFYEJAENYTeR2QOT5BWTMm";
+            
+            $response = file_get_contents($url."?secret=".$privatekey."&response=".$_POST['g-recaptcha-response']."&remoteip=".$_SERVER['REMOTE_ADDR']);
+            
+            $data = json_decode($response);
+            
+            if(isset($data->success) AND $data->success==true){
+                
+                include 'mail.php';
+                 
+                
+            } else {
+                
+             header('location: index.php?CaptchaFail=True');
+               
+            }
+                
+    }   
+    
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -312,6 +351,14 @@
 							<textarea class="form-control" type="text" id="message" placeholder="Type Message Here"></textarea>							
 							<button class="btn-danger btn-sm btn-est" id="submitBtn" type="button">Send</button>
 						</form>
+						  <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
+  						<script>
+ 					 grecaptcha.ready(function() {
+      						grecaptcha.execute('6Lfts5oUAAAAAL8-tklJOH8xK4jC-k--y4asmDq7', {action: 'homepage'}).then(function(token) {
+       							 
+   				   });
+  			});
+  </script>
 					</div>
 			
 				</div>
