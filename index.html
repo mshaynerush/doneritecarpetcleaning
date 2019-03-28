@@ -9,7 +9,7 @@ $_POST['phone'];
 $_POST['desc'];
 $_POST['service'];
 
-    if(isset($_POST['submit'])) {
+    if(isset($_POST['token'])) {
 
 
 
@@ -63,7 +63,8 @@ $_POST['service'];
 <link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">
 <link rel="stylesheet" href="style_alt.css">
 	
-<script src='https://www.google.com/recaptcha/api.js'></script>
+ <script src="https://www.google.com/recaptcha/api.js?render=6Lfts5oUAAAAAL8-tklJOH8xK4jC-k--y4asmDq7"></script>
+  <script>
 </head>
 	
 
@@ -343,7 +344,7 @@ $_POST['service'];
 						<?php if(isset($_GET['CaptchaFail'])) { ?>
 	                				<p style="text-align: center">Verification Failed. Please verify and resubmit</p>
 	                			<?php } ?>
-						<form method="POST">
+						<form method="POST" action="geteecaptcha()">
 							<label for="name">Name</label>
 							<input class="form-control" type="text" id="name" placeholder="Name">
 							<br />
@@ -387,8 +388,13 @@ $_POST['service'];
 		</div>
 	</div>
 </div>
-<script>
-</script>
+	</script>
+  grecaptcha.ready(function() {
+      grecaptcha.execute('reCAPTCHA_site_key', {action: 'homepage'}).then(function(token) {
+         ...
+      });
+  });
+  </script>
 </body>
 
 </html>
