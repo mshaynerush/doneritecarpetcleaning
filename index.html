@@ -340,6 +340,9 @@ $_POST['service'];
 		<div class="col-sm-12 col-lg-6 contact">
 				<div class="offerings" id="contact">Contact Us</div>
 					<div class="form-group col-sm-12 col-lg-12">
+						<?php if(isset($_GET['CaptchaFail'])) { ?>
+	                				<p style="text-align: center">Verification Failed. Please verify and resubmit</p>
+	                			<?php } ?>
 						<form action="contact.php" method="POST">
 							<label for="name">Name</label>
 							<input class="form-control" type="text" id="name" placeholder="Name">
